@@ -1,0 +1,23 @@
+<div class="col-md-8 offset-md-2">
+    <H2>Update {{ employee.fName }} {{ employee.lName }}'s Details</H2>
+
+    <form (ngSubmit) = "onSubmit()">
+        <div class="from-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" id="firstNmae" [(ngModel)] ="employee.fName" name="firstName">
+        </div>
+        <div class="from-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" id="lastNmae" [(ngModel)] ="employee.lName" name="lastName">
+        </div>
+        <div class="from-group">
+            <label>Email</label>
+            <input type="text" class="form-control" id="email" [(ngModel)] ="employee.emailID" name="email">
+        </div>
+        <div class="btn">
+            <button class="btn btn-success" type="submit">Update</button>
+        </div>
+        
+    
+    </form>
+</div>
