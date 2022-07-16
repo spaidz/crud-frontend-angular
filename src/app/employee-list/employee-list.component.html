@@ -18,6 +18,8 @@
             <td>{{ employee.emailID }}</td>
             <td>
                 <button (click)="updateEmployee(employee.id)" class="btn btn-info">Update</button>  
+                <span>     </span>
+                <button (click)="deleteEmployee(employee.id)" class="btn btn-red">Delete</button>  
             </td>
         </tr>
     </tbody>
